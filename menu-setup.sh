@@ -81,27 +81,6 @@ export CITY_NYA="$CITY";
 export COUNTRY_NYA="$COUNTRY";
 export TIME_NYA="$TIMEZONE";
 
-
-# // Rending Your License data from json
-export RESPON_CODE=$( echo ${API_REQ_NYA} | jq -r '.respon_code' );
-export IP=$( echo ${API_REQ_NYA} | jq -r '.ip' );
-export STATUS_IP=$( echo ${API_REQ_NYA} | jq -r '.status2' );
-export STATUS_LCN=$( echo ${API_REQ_NYA} | jq -r '.status' );
-export LICENSE_KEY=$( echo ${API_REQ_NYA} | jq -r '.license' );
-export PELANGGAN_KE=$( echo ${API_REQ_NYA} | jq -r '.id' );
-export TYPE=$( echo ${API_REQ_NYA} | jq -r '.type' );
-export COUNT=$( echo ${API_REQ_NYA} | jq -r '.count' );
-export LIMIT=$( echo ${API_REQ_NYA} | jq -r '.limit' );
-export CREATED=$( echo ${API_REQ_NYA} | jq -r '.created' );
-export EXPIRED=$( echo ${API_REQ_NYA} | jq -r '.expired' );
-export UNLIMITED=$( echo ${API_REQ_NYA} | jq -r '.unlimited' );
-export LIFETIME=$( echo ${API_REQ_NYA} | jq -r '.lifetime' );
-export STABLE=$( echo ${API_REQ_NYA} | jq -r '.stable' );
-export BETA=$( echo ${API_REQ_NYA} | jq -r '.beta' );
-export FULL=$( echo ${API_REQ_NYA} | jq -r '.full' );
-export LITE=$( echo ${API_REQ_NYA} | jq -r '.lite' );
-export NAME=$( echo ${API_REQ_NYA} | jq -r '.name' );
-
 # // Clear
 clear
 
