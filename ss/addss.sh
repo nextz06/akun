@@ -78,15 +78,6 @@ export CITY_NYA="$CITY";
 export COUNTRY_NYA="$COUNTRY";
 export TIME_NYA="$TIMEZONE";
 
-# // Validate Your License is active or no
-if [[ $STATUS_LCN == "active" ]]; then
-    SKIP=true;
-else
-    clear;
-    echo -e "${ERROR} Your License key not active";
-    exit 1;
-fi
-
 # // Clear Data
 clear;
 
