@@ -81,6 +81,27 @@ export CITY_NYA="$CITY";
 export COUNTRY_NYA="$COUNTRY";
 export TIME_NYA="$TIMEZONE";
 
+
+# // Rending Your License data from json
+export RESPON_CODE=$( echo ${API_REQ_NYA} | jq -r '.respon_code' );
+export IP=$( echo ${API_REQ_NYA} | jq -r '.ip' );
+export STATUS_IP=$( echo ${API_REQ_NYA} | jq -r '.status2' );
+export STATUS_LCN=$( echo ${API_REQ_NYA} | jq -r '.status' );
+export LICENSE_KEY=$( echo ${API_REQ_NYA} | jq -r '.license' );
+export PELANGGAN_KE=$( echo ${API_REQ_NYA} | jq -r '.id' );
+export TYPE=$( echo ${API_REQ_NYA} | jq -r '.type' );
+export COUNT=$( echo ${API_REQ_NYA} | jq -r '.count' );
+export LIMIT=$( echo ${API_REQ_NYA} | jq -r '.limit' );
+export CREATED=$( echo ${API_REQ_NYA} | jq -r '.created' );
+export EXPIRED=$( echo ${API_REQ_NYA} | jq -r '.expired' );
+export UNLIMITED=$( echo ${API_REQ_NYA} | jq -r '.unlimited' );
+export LIFETIME=$( echo ${API_REQ_NYA} | jq -r '.lifetime' );
+export STABLE=$( echo ${API_REQ_NYA} | jq -r '.stable' );
+export BETA=$( echo ${API_REQ_NYA} | jq -r '.beta' );
+export FULL=$( echo ${API_REQ_NYA} | jq -r '.full' );
+export LITE=$( echo ${API_REQ_NYA} | jq -r '.lite' );
+export NAME=$( echo ${API_REQ_NYA} | jq -r '.name' );
+
 # // Clear
 clear
 
@@ -196,18 +217,18 @@ wget -q -O /usr/local/sbin/panel-add-socks "https://releases.wildydev21.com/vpn-
 wget -q -O /usr/local/sbin/panel-add-ss "https://releases.wildydev21.com/vpn-script/Stable/1.0/menu/panel/panel-add-ss.sh"; chmod +x /usr/local/sbin/panel-add-ss;
 
 # // Other
-wget -q -O /usr/local/sbin/menu "https://releases.wildydev21.com/vpn-script/Stable/1.0/menu/menu.sh"; chmod +x /usr/local/sbin/menu;
-wget -q -O /usr/local/sbin/lcn-change "https://releases.wildydev21.com/vpn-script/Stable/1.0/menu/other/change-lcn.sh"; chmod +x /usr/local/sbin/lcn-change;
+wget -q -O /usr/local/sbin/menu "https://raw.githubusercontent.com/nextz06/akun/main/menu.sh"; chmod +x /usr/local/sbin/menu;
+
 wget -q -O /usr/local/sbin/speedtest "https://releases.wildydev21.com/vpn-script/Resource/Core/speedtest"; chmod +x /usr/local/sbin/speedtest;
 wget -q -O /usr/local/sbin/ram-usage "https://releases.wildydev21.com/vpn-script/Resource/Core/ram-usage.sh"; chmod +x /usr/local/sbin/ram-usage;
-wget -q -O /usr/local/sbin/autokill-menu "https://releases.wildydev21.com/vpn-script/Stable/1.0/menu/pro/autokill/menu.sh"; chmod +x /usr/local/sbin/autokill-menu;
+wget -q -O /usr/local/sbin/autokill-menu "https://raw.githubusercontent.com/nextz06/akun/main/pro/menu.sh"; chmod +x /usr/local/sbin/autokill-menu;
 wget -q -O /usr/local/sbin/autoexp "https://releases.wildydev21.com/vpn-script/Stable/1.0/menu/autoexp.sh"; chmod +x /usr/local/sbin/autoexp;
-wget -q -O /usr/local/sbin/autobackup "https://releases.wildydev21.com/vpn-script/Stable/1.0/menu/other/backup.sh"; chmod +x /usr/local/sbin/autobackup;
+wget -q -O /usr/local/sbin/autobackup "https://raw.githubusercontent.com/nextz06/akun/main/backup.sh"; chmod +x /usr/local/sbin/autobackup;
 wget -q -O /usr/local/sbin/backup "https://releases.wildydev21.com/vpn-script/Stable/1.0/menu/other/backup.sh"; chmod +x /usr/local/sbin/backup;
-wget -q -O /usr/local/sbin/restore "https://releases.wildydev21.com/vpn-script/Stable/1.0/menu/other/restore.sh"; chmod +x /usr/local/sbin/restore;
-wget -q -O /usr/local/sbin/change-port "https://releases.wildydev21.com/vpn-script/Stable/1.0/menu/other/port-change.sh"; chmod +x /usr/local/sbin/change-port;
+wget -q -O /usr/local/sbin/restore "https://raw.githubusercontent.com/nextz06/akun/main/restore.sh"; chmod +x /usr/local/sbin/restore;
+wget -q -O /usr/local/sbin/change-port "https://raw.githubusercontent.com/nextz06/akun/main/port-change.sh"; chmod +x /usr/local/sbin/change-port;
 wget -q -O /usr/local/sbin/clearlog "https://releases.wildydev21.com/vpn-script/Stable/1.0/menu/clearlog.sh"; chmod +x /usr/local/sbin/clearlog;
-wget -q -O /usr/local/sbin/infonya "https://releases.wildydev21.com/vpn-script/Stable/1.0/menu/info.sh"; chmod +x /usr/local/sbin/infonya;
+wget -q -O /usr/local/sbin/infonya "https://raw.githubusercontent.com/nextz06/akun/main/info.sh"; chmod +x /usr/local/sbin/infonya;
 wget -q -O /usr/local/sbin/vpnscript "https://releases.wildydev21.com/vpn-script/Stable/1.0/setup/script-version.sh"; chmod +x /usr/local/sbin/vpnscript
 
 # // Remove Not Used Files
